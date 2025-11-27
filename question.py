@@ -6,7 +6,7 @@ from transformers import pipeline
 from sentence_transformers import SentenceTransformer
 from sentence_transformers import CrossEncoder
 
-embedding_model = SentenceTransformer('msmarco-distilbert-base-dot-prod-v3')
+embedding_model = SentenceTransformer('sentence-transformers/msmarco-distilbert-base-dot-prod-v3')
 cross_model = CrossEncoder('cross-encoder/ms-marco-MiniLM-L-6-v2', max_length=512)
 
 snippet_model = "huggingface-course/bert-finetuned-squad"
